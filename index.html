@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Museo Web de la Evolución Gráfica: un recorrido por cinco momentos clave de la graficación por computadora, una aplicación real y un laboratorio de color RGB/HSV/HSL." />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Museo Web de la Evolución Gráfica</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header>
+      <nav aria-label="Navegación principal">
+        <a href="#evolucion">Evolución</a>
+        <a href="#aplicacion">Aplicación</a>
+        <a href="#laboratorio">Color</a>
+        <a href="#algoritmo">Algoritmo</a>
+        <a href="#glosario">Glosario</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero">
+        <h1>Museo Web de la Evolución Gráfica</h1>
+        <p>La graficación por computadora es la rama de la informática que se encarga de convertir datos e instrucciones en imágenes que una persona puede ver e interpretar en una pantalla. Va desde dibujar un simple punto hasta renderizar escenas tridimensionales completas, y su historia es también la historia de cómo las máquinas pasaron de procesar solo números y texto a procesar imágenes con las que podemos interactuar directamente.</p>
+        <p>Autor: Mya Rangel</p>
+      </section>
+
+      <section id="evolucion">
+        <h2>Cinco momentos de la evolución</h2>
+
+        <article>
+          <h3>1963 · Sketchpad: dibujos geométricos interactivos</h3>
+          <p><strong>Limitación anterior:</strong> Antes de Sketchpad, la informática funcionaba por lotes: se enviaban instrucciones a la computadora y había que esperar a que las procesara para ver un resultado. Aunque ya existían por separado las pantallas CRT y los lápices ópticos, no había un programa que los combinara para crear y corregir un dibujo geométrico al instante.</p>
+          <p><strong>Cambio:</strong> Sketchpad reunió el dibujo directo en pantalla con la selección y edición inmediata mediante el lápiz óptico. Guardaba las figuras como geometría estructurada (puntos, líneas y arcos con sus relaciones), no como una simple imagen, e introdujo restricciones (como mantener una línea horizontal) y símbolos reutilizables.</p>
+          <p><strong>Impacto:</strong> Al mover o cambiar una parte de la figura, las piezas conectadas se actualizaban automáticamente gracias a las restricciones definidas. Esto evitaba rehacer el dibujo completo cada vez que se necesitaba un ajuste y permitía corregir errores al instante.</p>
+          <p><strong>Ejemplo actual:</strong> Figma, donde se dibujan, mueven y modifican figuras geométricas directamente en pantalla, manteniendo relaciones y restricciones entre los elementos.</p>
+          <img src="https://blogimg.koder.ai/p/hVlBwrJuocM/rs:fit:640:0/q:70/f:webp/plain/019b7caf-0228-7d6a-8190-900e7b79acff/blog/019b5959-a666-71b0-ab4b-467ba7cdda92/6thomkmd.webp" width="640" height="360" alt="Ilustración del artículo de Koder.ai sobre Sketchpad de Ivan Sutherland, representando el nacimiento de los gráficos interactivos" />
+          <p class="credito">Crédito: Koder.ai, "Sketchpad de Ivan Sutherland: nacimiento de los gráficos interactivos". <a href="https://koder.ai/es/blog/sketchpad-nacimiento-graficos-interactivos">koder.ai</a></p>
+        </article>
+
+        <article>
+          <h3>Imágenes rasterizadas se popularizan en la computación personal</h3>
+          <p><strong>Limitación anterior:</strong> Un sistema vectorial describe líneas y figuras mediante fórmulas matemáticas, así que sería muy difícil representar el detalle fino de una fotografía real: texturas, sombras y degradados de color que no se pueden reducir a simples formas geométricas.</p>
+          <p><strong>Cambio:</strong> La imagen rasterizada guarda el color exacto de cada punto pequeño, llamado píxel, organizado en una cuadrícula o mapa de bits. Esto permite representar fotografías reales con fidelidad, en lugar de solo formas y contornos.</p>
+          <p><strong>Impacto:</strong> Se puede retocar cada píxel o una pequeña zona de la fotografía de forma independiente (brillo, color, nitidez), lo que permite ediciones muy detalladas, aunque la imagen pierde calidad si se agranda o escala demasiado.</p>
+          <p><strong>Ejemplo actual:</strong> Photoshop, una aplicación que permite cambiar píxeles o zonas específicas de una imagen rasterizada.</p>
+          <img src="./assets/imagen-rasterizada-zoom.svg.svg" width="600" height="400" alt="Ilustración esquemática de una fotografía ampliada donde se distinguen los pequeños cuadros de color individuales (píxeles) que forman la imagen" />
+          <p class="credito">Ilustración propia elaborada para este trabajo, inspirada en el concepto explicado por Hostingplus, "¿Qué es una imagen rasterizada?". <a href="https://www.hostingplus.cl/blog/que-es-una-imagen-rasterizada/">hostingplus.cl</a></p>
+        </article>
+
+        <article>
+          <h3>Hardware especializado: gráficos en tiempo real con la GPU</h3>
+          <p><strong>Limitación anterior:</strong> Sin un procesador dedicado a gráficos, un retraso en el cálculo dificultaba que un videojuego o simulador respondiera a tiempo a las acciones de una persona; si la imagen se actualizaba tarde, el movimiento se veía entrecortado y se rompía la sensación de control inmediato.</p>
+          <p><strong>Cambio:</strong> La GPU (unidad de procesamiento gráfico) acelera los cálculos gráficos mediante procesamiento paralelo, usando cientos o miles de núcleos que trabajan al mismo tiempo, mucho más rápido que una CPU de propósito general.</p>
+          <p><strong>Impacto:</strong> Con mayor fluidez, el movimiento se ve continuo y las acciones de la persona se reflejan casi al instante en pantalla, sin interrumpir la sensación de control en tiempo real.</p>
+          <p><strong>Ejemplo actual:</strong> Un simulador de conducción o un juego de disparos en primera persona, que necesitan responder de inmediato a las acciones del jugador.</p>
+          <img src="https://img.datacentermarket.es/wp-content/uploads/2024/07/08120814/Que-es-una-GPU-1.jpeg" width="1270" height="781" alt="Imagen de portada del artículo de Data Center Market sobre qué es una GPU" />
+          <p class="credito">Crédito: Data Center Market, "Qué es una GPU: características e importancia para los data centers". <a href="https://www.datacentermarket.es/dcm-xl/que-es-una-gpu-caracteristicas-e-importancia-para-los-data-centers/">datacentermarket.es</a></p>
+        </article>
+
+        <article>
+          <h3>Canvas desde 2004 · WebGL desde 2011: gráficos en el navegador</h3>
+          <p><strong>Limitación anterior:</strong> Antes, algunos sitios dependían de complementos instalados aparte (como Flash) para mostrar contenido interactivo. Instalar y mantener un complemento causaba problemas de compatibilidad entre navegadores, actualizaciones constantes y riesgos de seguridad.</p>
+          <p><strong>Cambio:</strong> Canvas dibuja gráficos 2D mediante código directamente en el navegador. WebGL, por su parte, permite comunicarse directamente con la GPU para acelerar los gráficos por hardware, haciendo posible renderizar escenas 3D complejas e interactivas sin instalar nada adicional.</p>
+          <p><strong>Impacto:</strong> El sitio pudo ofrecer gráficos interactivos, animaciones y experiencias 3D inmersivas directamente en la página, sin pedir que la persona instalara ningún complemento.</p>
+          <p><strong>Ejemplo actual:</strong> three.js, una biblioteca usada para crear demos y experiencias 3D que se exploran directamente en el navegador.</p>
+          <img src="https://jolicode.com/media/cache/content/2018/wegl-wow-effect/image18.png" width="500" height="500" alt="Esfera renderizada con un shader básico de WebGL, resultado del ejemplo 'Hello World' de shaders del artículo" />
+          <p class="credito">Crédito: JoliCode, "WebGL, the wow effect". <a href="https://jolicode.com/blog/webgl-the-wow-effect">jolicode.com</a></p>
+        </article>
+
+        <article>
+          <h3>2023 · WebGPU: acceso más directo a la GPU desde el navegador</h3>
+          <p><strong>Limitación anterior:</strong> WebGL, aunque acelera gráficos por hardware, está basado en un estándar antiguo (OpenGL ES) que limita el acceso a funciones modernas de las tarjetas gráficas, como el cómputo general en GPU para tareas distintas a dibujar gráficos.</p>
+          <p><strong>Cambio:</strong> WebGPU es una nueva API web que no es una adaptación de un estándar previo, sino que retoma conceptos de APIs nativas modernas (Metal, Vulkan y Direct3D 12). Ofrece una carga de trabajo de JavaScript mucho más reducida para los mismos gráficos y da acceso a capacidades avanzadas que WebGL no proporciona.</p>
+          <p><strong>Impacto:</strong> Las aplicaciones web pueden ejecutar gráficos más avanzados y también cómputo general en la GPU con mejor rendimiento; por ejemplo, se reportan mejoras de más del triple en la velocidad de inferencia de modelos de aprendizaje automático dentro del navegador.</p>
+          <p><strong>Ejemplo actual:</strong> TensorFlow.js, que ya cuenta con versiones optimizadas para aprovechar WebGPU al ejecutar modelos de inteligencia artificial en el navegador.</p>
+          <img src="./assets/webgpu-diagrama.svg.svg" width="600" height="400" alt="Diagrama esquemático que compara el flujo de trabajo de WebGL con el de WebGPU sobre el hardware gráfico" />
+          <p class="credito">Ilustración propia elaborada para este trabajo, basada en la explicación de Chrome Developers, "WebGPU: descripción general". <a href="https://developer.chrome.com/docs/web-platform/webgpu/overview?hl=es-419">developer.chrome.com</a></p>
+        </article>
+      </section>
+
+      <section id="aplicacion">
+        <h2>Una aplicación real</h2>
+        <p><strong>Usuario:</strong> una persona que necesita trasladarse de un punto A a un punto B y quiere elegir la mejor ruta disponible. → <strong>Problema:</strong> comparar varias rutas posibles según tiempo, distancia y tráfico, para decidir cuál tomar. → <strong>Datos de entrada:</strong> coordenadas de origen y destino, velocidad promedio de las vías, nivel de congestión en tiempo real y modo de transporte elegido. → <strong>Representación visual:</strong> líneas superpuestas sobre el mapa que muestran las rutas posibles, diferenciadas por color según su nivel de tráfico (verde, amarillo, rojo). → <strong>Decisión:</strong> elegir la ruta más rápida, más corta o que evite peajes, según la urgencia o preferencia del usuario.</p>
+      </section>
+
+      <section id="laboratorio">
+        <h2>Laboratorio de color</h2>
+
+        <article>
+          <h3>Experimento 1 · Cuando desaparece el tono (Negro, Blanco, Gris)</h3>
+          <p><strong>Predicción:</strong> Cuando R, G y B son iguales, el máximo y el mínimo de los tres canales serán el mismo número, por lo que el delta (máximo − mínimo) será 0 y, con él, la saturación también será 0%, sin importar qué tan claro u oscuro sea el gris.</p>
+          <p><strong>Datos:</strong> Negro RGB(0,0,0) → Máx/mín/Δ = 0/0/0 → HSV(0°, 0%, 0%) → HSL(0°, 0%, 0%) → CMY(100%, 100%, 100%). Blanco RGB(255,255,255) → Máx/mín/Δ = 255/255/0 → HSV(0°, 0%, 100%) → HSL(0°, 0%, 100%) → CMY(0%, 0%, 0%). Gris RGB(128,128,128) → Máx/mín/Δ = 128/128/0 → HSV(0°, 0%, 50.2%) → HSL(0°, 0%, 50.2%) → CMY(49.8%, 49.8%, 49.8%).</p>
+          <p><strong>Conclusión basada en valores:</strong> En los tres casos R=G=B, por lo que el delta siempre es 0. Con delta 0 la saturación también es 0% en los tres, y solo cambia el Valor/brillo (0%, 50.2%, 100%). El tono aparece como 0° pero no representa un color real, porque sin delta no hay forma de calcular en qué sector del círculo cae el color. Así, cuando R=G=B, el tono desaparece y el color queda definido solo por su brillo: una escala de grises.</p>
+        </article>
+
+        <article>
+          <h3>Experimento 2 · Mismo sector, distinta intensidad (Rojo puro vs. rojo apagado)</h3>
+          <p><strong>Predicción:</strong> El tono se conservará igual entre RGB(128,0,0) y RGB(128,64,64), porque el canal Rojo sigue siendo el más alto en ambos casos y deberían caer en el mismo sector del círculo de tono. Lo que podría cambiar es la saturación, porque al acercar G y B hacia el valor de R, el color se ve menos puro y más apagado.</p>
+          <p><strong>Datos:</strong> RGB(128,0,0) → Máx/mín/Δ = 128/0/128 → HSV(0°, 100%, 50.2%) → HSL(0°, 100%, 25.1%) → CMY(49.8%, 100%, 100%). RGB(128,64,64) → Máx/mín/Δ = 128/64/64 → HSV(0°, 50%, 50.2%) → HSL(0°, 33.3%, 37.6%) → CMY(49.8%, 74.9%, 74.9%).</p>
+          <p><strong>Conclusión basada en valores:</strong> El tono se mantuvo en 0° en ambos casos, confirmando que están en el mismo sector (rojo). Lo que cambió fue la saturación, que bajó de 100% a 50% al reducirse el delta de 128 a 64. El Valor se mantuvo igual (50.2%) porque el canal máximo no cambió, pero la Luminosidad sí aumentó (de 25.1% a 37.6%) porque el mínimo subió de 0 a 64. Esto muestra que la saturación depende de qué tan separados están los canales (el delta), mientras que el tono depende de cuál canal domina y cómo se relacionan los otros dos con él.</p>
+        </article>
+
+        <article>
+          <h3>Experimento 3 · Comparación en una imagen real (Agua vs. Cielo)</h3>
+          <p><strong>Predicción:</strong> La zona de Agua tendrá mayor saturación y menor luminosidad que el Cielo, porque aunque ambas comparten un tono azul-cian, el agua suele reflejar un color más intenso y oscuro, mientras que el cielo se ve más claro y desaturado por la luz directa del sol.</p>
+          <p><strong>Datos:</strong> Agua, posición 369,436 → RGB(7, 174, 183) → CMY(97.3%, 31.8%, 28.2%) → HSV(183.1°, 96.2%, 71.8%) → HSL(183.1°, 92.6%, 37.3%). Posición en el círculo de tono: 183.1°, sector cian.</p>
+          <p><strong>Conclusión basada en valores:</strong> El Agua dio un tono cian (183.1°) con saturación muy alta (96.2%). Al activar la simulación en escala de grises, el tono desaparece y solo queda el Valor (71.8%), por lo que la zona pasa a verse como un gris medio-claro. El Sol sigue distinguiéndose en la imagen en gris porque su valor de brillo es mucho más alto (cercano al blanco), mientras que Agua y Tierra se confunden más entre sí al tener valores de brillo más parecidos.</p>
+        </article>
+      </section>
+
+      <section id="algoritmo">
+        <h2>De la fórmula al algoritmo</h2>
+        <p>Para convertir un color de RGB a HSV, primero hay que normalizar cada canal: convertirlo de una escala de 0–255 a una escala de 0–1, dividiendo cada valor entre 255. Después se calcula el máximo (el canal más alto de los tres) y el mínimo (el canal más bajo). La diferencia entre ambos es el delta (Δ = máx − mín), y es la pieza clave de todo el cálculo: si el delta es 0, significa que los tres canales son iguales (R=G=B), es decir, un color acromático (gris, blanco o negro), y en ese caso tanto el tono como la saturación se reportan como 0, porque no hay ninguna diferencia entre canales que permita ubicar un color en el círculo de tono. Si el delta es mayor que 0, el tono se calcula viendo cuál canal es el máximo y cómo se relacionan los otros dos con la diferencia; la saturación se calcula dividiendo el delta entre el máximo; y el valor (V) es simplemente el máximo normalizado.</p>
+        <pre><code>// Función probada: convierte RGB (0-255) a HSV
+function rgbAHsv(r, g, b) {
+  // 1. Normalizar cada canal a una escala de 0 a 1
+  r /= 255;
+  g /= 255;
+  b /= 255;
+
+  // 2. Calcular máximo, mínimo y delta
+  const maximo = Math.max(r, g, b);
+  const minimo = Math.min(r, g, b);
+  const delta = maximo - minimo;
+
+  let h = 0;
+  let s = 0;
+  const v = maximo; // El valor (V) es el canal máximo normalizado
+
+  // 3. Caso acromático: si no hay diferencia entre canales, no hay tono
+  if (delta === 0) {
+    h = 0;
+    s = 0;
+  } else {
+    // 4. Saturación: qué tan lejos está del gris de ese mismo brillo
+    s = delta / maximo;
+
+    // 5. Tono: depende de cuál canal es el máximo
+    if (maximo === r) {
+      h = 60 * (((g - b) / delta) % 6);
+    } else if (maximo === g) {
+      h = 60 * ((b - r) / delta + 2);
+    } else {
+      h = 60 * ((r - g) / delta + 4);
+    }
+    if (h < 0) h += 360;
+  }
+
+  return {
+    h: Math.round(h),
+    s: Math.round(s * 100),
+    v: Math.round(v * 100),
+  };
+}
+
+// Prueba con los datos del Experimento 1 (Gris)
+console.log(rgbAHsv(128, 128, 128)); // { h: 0, s: 0, v: 50 }
+
+// Prueba con los datos del Experimento 3 (Agua)
+console.log(rgbAHsv(7, 174, 183)); // { h: 183, s: 96, v: 72 }
+</code></pre>
+      </section>
+
+      <section id="glosario">
+        <h2>Glosario</h2>
+        <dl>
+          <dt>Graficación por computadora</dt>
+          <dd>El área de la informática que convierte datos e instrucciones en imágenes visibles en una pantalla, desde un punto simple hasta una escena 3D completa.</dd>
+          <dt>Normalizar</dt>
+          <dd>Convertir un canal de color de la escala 0–255 a la escala 0–1, dividiéndolo entre 255. Por ejemplo, un canal con valor 128 se normaliza a 0.502.</dd>
+          <dt>Máximo</dt>
+          <dd>El canal (R, G o B) con el valor más alto en un color dado. En RGB(7, 174, 183), el máximo es el canal Azul (183).</dd>
+          <dt>Mínimo</dt>
+          <dd>El canal con el valor más bajo. En el mismo ejemplo, el mínimo es el canal Rojo (7).</dd>
+          <dt>Delta</dt>
+          <dd>La diferencia entre el máximo y el mínimo (máximo − mínimo). Si es 0, el color es un gris puro; si es grande, el color es muy intenso.</dd>
+          <dt>Tono (H)</dt>
+          <dd>Ubica un color alrededor de un círculo, en grados (0°–360°). Un sector es una zona de ese círculo, como rojo, verde o azul. Se calcula viendo cuál canal es el máximo y cómo se relacionan los otros dos.</dd>
+          <dt>Saturación (S)</dt>
+          <dd>Indica qué tan lejos está un color de un gris del mismo brillo. Una saturación baja se acerca al gris; una alta se ve muy "pura" o intensa.</dd>
+          <dt>Valor y Luminosidad (V y L)</dt>
+          <dd>El Valor (V) usa el canal RGB más alto como referencia de brillo. La Luminosidad (L) usa el punto medio entre el canal mayor y el menor; por eso V y L pueden dar números distintos para el mismo color, como se vio en el Experimento 2 (V=50.2% y L=37.6% para el mismo rojo apagado).</dd>
+          <dt>CMY</dt>
+          <dd>Describe cuánto cian, magenta y amarillo se necesitan como complemento de RGB. Por ejemplo, el Blanco en RGB da CMY(0%, 0%, 0%), porque no necesita nada de tinta para "restarle" luz.</dd>
+          <dt>HSV y HSL</dt>
+          <dd>Son dos maneras distintas de reorganizar el mismo color RGB. HSV usa tono, saturación y valor; HSL usa tono, saturación y luminosidad. Ambos comparten el mismo tono, pero calculan el brillo de forma distinta.</dd>
+          <dt>Rasterización</dt>
+          <dd>El proceso de convertir datos geométricos o vectoriales en una imagen formada por píxeles, lista para mostrarse en una pantalla.</dd>
+          <dt>GPU (unidad de procesamiento gráfico)</dt>
+          <dd>Un procesador especializado en realizar muchos cálculos gráficos al mismo tiempo (en paralelo), lo que permite mostrar imágenes complejas con la suficiente rapidez para que el movimiento se vea fluido.</dd>
+        </dl>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>Antes pensaba que el tono, la saturación y el brillo eran tres propiedades completamente independientes entre sí, casi como si un programa "adivinara" el color a partir de reglas separadas para cada una. La evidencia de los tres experimentos de color cambió mi idea porque mostró que las tres dependen exactamente de los mismos tres números (R, G y B) y de una sola operación clave: el delta. En el Experimento 1, cuando el delta es 0, el tono simplemente deja de existir y solo queda el brillo. En el Experimento 2, cuando el delta cambia sin que el canal dominante cambie, solo se mueve la saturación (de 100% a 50%), mientras el tono permanece fijo en 0°. Y en el Experimento 3, con una imagen real, esas mismas reglas explican por qué el Sol sigue distinguiéndose en escala de grises (su Valor es mucho más alto) mientras Agua y Tierra se confunden entre sí. De la misma forma, ver la evolución histórica —de Sketchpad, que apenas podía dibujar líneas con restricciones, hasta WebGPU, que permite renderizar escenas complejas y hasta modelos de inteligencia artificial directamente en el navegador— me hizo entender que los gráficos por computadora no avanzaron por un solo invento genial, sino por una cadena de soluciones, cada una resolviendo la limitación técnica de la anterior.</p>
+      </section>
+
+      <section id="fuentes">
+        <h2>Fuentes y créditos</h2>
+        <ol>
+          <li>Computer History Museum. "Ivan Sutherland demonstrating Sketchpad on the TX-2", cortesía del MIT Museum. <a href="https://www.computerhistory.org/revolution/input-output/14/349/1878">computerhistory.org/revolution/input-output/14/349/1878</a>. Consultado el 6 de septiembre de 2026.</li>
+          <li>koder.ai. "Sketchpad: el nacimiento de los gráficos interactivos". <a href="https://koder.ai/es/blog/sketchpad-nacimiento-graficos-interactivos">koder.ai/es/blog/sketchpad-nacimiento-graficos-interactivos</a>. Consultado el 6 de septiembre de 2026.</li>
+          <li>Hostingplus. "¿Qué es una imagen rasterizada?" (fuente conceptual de la ilustración propia usada en esta página). <a href="https://www.hostingplus.cl/blog/que-es-una-imagen-rasterizada/">hostingplus.cl/blog/que-es-una-imagen-rasterizada</a>. Consultado el 6 de septiembre de 2026.</li>
+          <li>Data Center Market. "Qué es una GPU: características e importancia para los data centers". <a href="https://www.datacentermarket.es/dcm-xl/que-es-una-gpu-caracteristicas-e-importancia-para-los-data-centers/">datacentermarket.es/dcm-xl/que-es-una-gpu</a>. Consultado el 6 de septiembre de 2026.</li>
+          <li>JoliCode (Cécile Delmon). "WebGL, the wow effect". <a href="https://jolicode.com/blog/webgl-the-wow-effect">jolicode.com/blog/webgl-the-wow-effect</a>. Publicado el 16 de abril de 2018. Consultado el 6 de septiembre de 2026.</li>
+          <li>Chrome Developers. "WebGPU: descripción general" (fuente conceptual de la ilustración propia usada en esta página). <a href="https://developer.chrome.com/docs/web-platform/webgpu/overview?hl=es-419">developer.chrome.com/docs/web-platform/webgpu/overview</a>. Consultado el 6 de septiembre de 2026.</li>
+        </ol>
+      </section>
+    </main>
+    <footer><p>Mya Rangel · Graficación 2026</p></footer>
+  </body>
+</html>
