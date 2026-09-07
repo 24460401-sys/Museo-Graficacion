@@ -18,3 +18,16 @@ pre { overflow-x: auto; padding: 1rem; color: #f7fbff; background: #14212b; }
 footer { padding: 2rem 0; }
 @media (max-width: 30rem) { main section { padding: 3rem 0; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+article {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
